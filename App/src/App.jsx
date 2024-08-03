@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-import Header from './header';
+import Header from './components/header';
+import Content from './components/content';
 
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
   return (
     <main>
       <Header />
+      <Content />
 
       {/* <img src="/images/cell-phone.svg" /> */}
     </main>

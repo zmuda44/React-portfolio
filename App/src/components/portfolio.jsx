@@ -1,11 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import './svg.css';
-import Cards from './cards'
-import RandomChoice from './random-choice'
-import Greeter from './greeter.js'
-import RollDie from './roll-die.js'
-import Projects from './db/projects'
+
+
+// import Cards from './cards'
+
+// import Projects from './db/projects'
 
 function Portfolio() {
   return (
@@ -41,17 +38,10 @@ function Portfolio() {
           </div>
       </div>
       </section>
-
-      <section className='projects'>
-      <div className='container'>
-        <Cards projects={Projects}/>
-        <RandomChoice />
-        <Greeter name="greret"
-        ddd="meff" />
-        <RollDie sides={20}/>
-      </div>        
-      </section>
+    
     </div>
+
+
 
   );
 }
