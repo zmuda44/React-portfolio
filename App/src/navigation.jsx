@@ -1,4 +1,17 @@
+const [activeSection, setActiveSection] = useState('home');
 
+const renderSection = () => {
+  switch (activeSection) {
+    case 'home':
+      return <Home />;
+    case 'about':
+      return <About />;
+    case 'contact':
+      return <Contact />;
+    default:
+      return <Home />;
+  }
+};
 
 
 function Navigation() {
