@@ -27,53 +27,47 @@ main {
   color: white;
 }
 
-main .container {
+section {
+  margin: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* About Me Section */
+#about-me .top {
   display: flex;
   justify-content: space-between;
 }
 
-main .right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-/* Hero section of main */
-
-/* .hero {
-} */
-
-.hero .left {
-  width: 25%;
-  border: solid yellow;
-}
-.hero .right {
-  width: 70%;
-  border: solid yellow;
-}
-
-#self-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
- }
-
- /* Portfolio section of main */
- .adv .left {
-  width: 25%;
-  border: solid yellow; 
- }
-
- .adv .right {
-  width: 70%;
-  border: solid yellow;
- }
-
- #adv-header {
+/* Porfolio */
+#portfolio .top {
   display: flex;
-  gap: 10px;
- }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+  width: 25%;
+}
+
+.phone-container {
+  position: relative;
+}
+
+.phone-container img {
+  position: absolute;
+}
+
+
+
+
 
 
 

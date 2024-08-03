@@ -8,14 +8,15 @@ import Resume from './resume'
 function Content() {
   return (
     <main>
-    <div className='container'>
+      <div className='container'>
         <p>Welcome to my online portfolio</p>
-        <AboutMe />
-        {/* <Portfolio />
-        <Contact />
-        <Resume /> */}
 
-    </div>
+          {/* <AboutMe /> */}
+          <Portfolio />
+          {/* <Contact /> */}
+          {/* <Resume /> */} 
+
+      </div>
     </main>
   );
 }
