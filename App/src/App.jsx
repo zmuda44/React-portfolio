@@ -3,6 +3,7 @@ import './App.css'
 
 import Header from './components/header';
 import Content from './components/content';
+import Footer from './components/footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <body>
       <Header />
       <Content />
+      <Footer />
 
       {/* <img src="/images/cell-phone.svg" /> */}
     </body>
