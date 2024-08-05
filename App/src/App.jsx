@@ -3,18 +3,20 @@ import './App.css'
 
 import Header from './components/header';
 import Content from './components/content';
+import Footer from './components/footer';
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main>
+    <body>
       <Header />
       <Content />
+      <Footer />
 
       {/* <img src="/images/cell-phone.svg" /> */}
-    </main>
+    </body>
   )
 }
 

@@ -1,5 +1,8 @@
 // const [activeSection, setActiveSection] = useState('home');
 
+const liItemEls = document.get
+
+
 // const renderSection = () => {
 //   switch (activeSection) {
 //     case 'home':

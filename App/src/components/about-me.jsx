@@ -3,12 +3,25 @@ import Navigation from './navigation'
 
 function AboutMe() {
   return (
-    <main>
-    <div className='container'>
-        <p>This is the about me section</p>
-        <p>This is where content will go</p>
-    </div>
-    </main>
+    <section id='about-me'>
+      <div className='top'>
+        <div className="left">
+          <p>an icon will go here</p>
+          <p>This is the about me section</p>
+        </div>
+        <div className="right">
+          <p>full stack</p>
+          <p>responsive design</p>
+          <p>graphic design</p>
+        </div>   
+      </div>
+      <div className="bio">
+        <p>This will be just one large bio paragraph</p>
+      </div>
+
+
+
+    </section>
   );
 }
 
