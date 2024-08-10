@@ -1,7 +1,7 @@
 import Projects from '../db/projects'
 
 
-function Card (props) {
+function Project (props) {
   return (
   <div className="card">
   <h1><a href='{props.url}'>{props.title}</a></h1>
@@ -11,8 +11,8 @@ function Card (props) {
  ) 
 }
 
-function createCard (project) {  
-  return <Card
+function createProject(project) {  
+  return <Project
     key = {project.id}
     title={project.title}
     description={project.description}
@@ -20,11 +20,11 @@ function createCard (project) {
   />
 }
 
-function Cards(props) {
+function Project(props) {
 
   return (
     <div className="cards-container">
-      {Projects.map(createCard)}
+      {Projects.map(project)}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 
 
-import Cards from './cards'
+import Projects from './projects'
 
 
 
@@ -34,7 +34,7 @@ function Portfolio() {
       </div>
               
       <div className="bottom">
-              <Cards />
+              <Projects />
 
 
       </div>
