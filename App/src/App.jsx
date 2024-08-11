@@ -10,13 +10,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <body>
+    <>
       <Header />
       <Outlet />
       <Footer />
+    </>
 
-      {/* <img src="/images/cell-phone.svg" /> */}
-    </body>
   )
 }
 
