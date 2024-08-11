@@ -1,6 +1,6 @@
 
 
-import Projects from './projects'
+import Projects from '../components/projects'
 
 
 

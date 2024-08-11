@@ -1,8 +1,8 @@
 import { useState } from 'react'
+import { Outlet } from 'react-router-dom';
 import './App.css'
 
 import Header from './components/header';
-import Content from './components/content';
 import Footer from './components/footer';
 
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <body>
       <Header />
-      <Content />
+      <Outlet />
       <Footer />
 
       {/* <img src="/images/cell-phone.svg" /> */}
