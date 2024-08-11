@@ -32,3 +32,12 @@ code {
 svg {
   display: block;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}

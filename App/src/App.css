@@ -3,7 +3,10 @@
 .container {
   max-width: 1200px;
   margin: auto;
+  background-color: red;
 }
+
+
 
 /* Header */
 header .container {
@@ -21,13 +24,14 @@ header ul {
   gap: 20px;  
 }
 
-/* Main */
-
-main {
+.nav-active {
   color: white;
 }
 
+/* Main */
+
 section {
+  color: white;
   margin: 40px;
   background-color: gray;
   border-radius: 20px;
@@ -43,6 +47,16 @@ section {
 /* Porfolio */
 #portfolio .top {
   display: flex;
+  justify-content: space-between;
+}
+
+#portfolio .top #adv-header {
+  padding: 0;
+  margin: 0;
+}
+#portfolio .top #adv-header p {
+  padding: 0;
+  margin: 0;
 }
 
 .cards-container {
@@ -64,23 +78,24 @@ section {
   width: 300px;
 }
 
-.phone-container {
-  position: relative;
-}
-
-.phone-container img {
-  position: absolute;
-}
-
 
 /* Footer */
 
-#footer {
+footer .container{
+  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  align-items: center;
+
 }
 
+footer .right {
+  display: flex;
+}
 
+footer .right p {
+  margin: 0 20px;
+}
 
 
 
