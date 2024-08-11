@@ -11,7 +11,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
-  // error state here
+  const [errorMessage, setErrorMessage] = useState('');
   // something is doing this anyway with email
 
   const handleInputChange = (e) => {
@@ -31,11 +31,31 @@ function Contact() {
     } else {
       setMessage(inputValue);
     }
+
+    if (!inputValue) {
+      setErrorMessage('No inputValue');
+    }
   };
+
+  const handleBlur = (e) => {
+    const target = e.target;
+    const inputValue = target.value;
+
+    // Check if the field is empty when the user leaves the input field
+    if (!inputValue) {
+      setErrorMessage(`Please enter your ${target.placeholder}`);
+    }
+  };
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+    if (!name || !email || !message) {
+      alert("All fields required to send a message");
+      return
+    }
+    
     alert(`Hello ${name}, welcome to my portfolio!`);
 
     // Clears form
@@ -55,6 +75,7 @@ function Contact() {
             value={name}
             name="name"
             onChange={handleInputChange}
+            onBlur={handleBlur}
             type="text"
             placeholder="Name"
           />
@@ -74,7 +95,7 @@ function Contact() {
           />
           <button type="submit">Submit</button>
         </form>
-
+        {errorMessage && <p className="error-text">{errorMessage}</p>}
       </div>
     </section>
 
