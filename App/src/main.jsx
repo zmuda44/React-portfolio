@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ErrorPage from './pages/ErrorPage';
+// import ErrorPage from './pages/ErrorPage';
 import AboutMe from './pages/about-me.jsx';
 import Portfolio from './pages/portfolio.jsx';
 import Contact from './pages/contact.jsx';
@@ -14,15 +14,19 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
+    // errorElement: <ErrorPage />,
     children: [
       {
         index: true,
         element: <AboutMe />,
       },
       {
+        path: 'about-me',
+        element: <AboutMe />,
+      },
+      {
         path: 'portfolio',
-        element: <ProfilePage />,
+        element: <Portfolio />,
       },
       {
         path: 'contact',
@@ -35,6 +39,8 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+console.log("do test with state and see if it refreshes")
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

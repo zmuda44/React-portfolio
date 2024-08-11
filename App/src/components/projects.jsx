@@ -20,14 +20,14 @@ function createProject(project) {
   />
 }
 
-function Project(props) {
+// function Project(props) {
 
-  return (
-    <div className="cards-container">
-      {Projects.map(project)}
-    </div>
-  );
-}
+//   return (
+//     <div className="cards-container">
+//       {Projects.map(project)}
+//     </div>
+//   );
+// }
 
-export default Cards;
+export default Project;
 
