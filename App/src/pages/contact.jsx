@@ -35,17 +35,22 @@ function Contact() {
     if (!inputValue) {
       setErrorMessage('No inputValue');
     }
+    console.log(inputType)
   };
 
-  const handleBlur = (e) => {
+  const handleOut = (e) => {
     const target = e.target;
     const inputValue = target.value;
 
     // Check if the field is empty when the user leaves the input field
     if (!inputValue) {
-      setErrorMessage(`Please enter your ${target.placeholder}`);
-    }
-  };
+      if(target.placeholder === 'Type your message here') {
+        setErrorMessage('Please enter your message');
+      } else {
+        setErrorMessage(`Please enter your ${target.placeholder}`);
+      }
+    };
+  }
 
 
   const handleFormSubmit = (e) => {
@@ -75,7 +80,7 @@ function Contact() {
             value={name}
             name="name"
             onChange={handleInputChange}
-            onBlur={handleBlur}
+            onBlur={handleOut}
             type="text"
             placeholder="Name"
           />
@@ -83,6 +88,7 @@ function Contact() {
             value={email}
             name="email"
             onChange={handleInputChange}
+            onBlur={handleOut}
             type="email"
             placeholder="email"
           />
@@ -90,6 +96,7 @@ function Contact() {
             value={message}
             name="message"
             onChange={handleInputChange}
+            onBlur={handleOut}
             type="password"
             placeholder="Type your message here"
           />
