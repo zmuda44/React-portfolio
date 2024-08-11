@@ -3,12 +3,12 @@
 
 function Resume() {
   return (
-    <main>
+    <section id="resume">
     <div className='container'>
         <p>Greg Bailey Resume</p>
-        <p>click on the link to download</p>
+        <a href=".\images\Greg Bailey resume web.pdf" download="Greg Bailey resume.pdf">click on the link to download</a>
     </div>
-    </main>
+    </section>
   );
 }
 
