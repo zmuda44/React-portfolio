@@ -39,9 +39,29 @@ section {
 }
 
 /* About Me Section */
+
+#aboutme-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
 #about-me .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+}
+
+#about-me .top .right {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20%;
+}
+
+#about-me img {
+  width: 400px;
+  border-radius: 50%;
 }
 
 /* Porfolio */
