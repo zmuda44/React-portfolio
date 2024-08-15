@@ -79,22 +79,19 @@ section {
   margin: 0;
 }
 
-.cards-container {
+#portfolio .bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
-.card {
-  background-color: black;
-  margin: 10px;
-  padding: 2px;
-  border-radius: 50px;
-  text-align: center;
+#portfolio .project {
   width: 30%;
+  margin: 20px;
 }
 
-.card img {
+.project img {
   width: 300px;
 }
 

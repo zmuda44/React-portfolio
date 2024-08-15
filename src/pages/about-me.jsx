@@ -8,7 +8,7 @@ function AboutMe() {
       <h1 id="aboutme-title">About Me</h1>
         <div className='top'>
           <div className="left">
-            <img src="./public/images/shadowgreg.png" alt="placeholder" />           
+            <img src="./public/images/shadowgreg.png" alt="image of me" />           
           </div>
           <div className="right">
             <p>full stack</p>

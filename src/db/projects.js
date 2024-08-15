@@ -1,23 +1,23 @@
 const projects = [
   {
     id: 1,
-    title: "Note Taker App",
-    description: "Note Taker App submitted as the Module 11 Challenge",
-    img: './images/First blog post day mode screenshot (1).png',
-    url: 'https://note-taker-app-module-11-challenge.onrender.com/'
+    title: "Task Board",
+    description: "Allows user to keep track of tasks and mark them as complete",
+    img: './images/task board screenshot.png',
+    url: 'https://zmuda44.github.io/Module-5-Challenge/'
   },
   {
     id: 2,
     title: "Weather App",
     description: "Gets data from a 3rd party API to display the current weather and 5 day forecast from an input city",
-    img: './images/First blog post day mode screenshot (1).png',
+    img: './images/Module-6-Challenge-screenshot.png',
     url: 'https://zmuda44.github.io/Module-6-Challenge-Weather-app/'
   },
   {
     id: 3,
     title: "Fizz Buzz",
     description: "My take on fizz buzz. Animations included",
-    img: './images/First blog post day mode screenshot (1).png',
+    img: './images/project-fizzbuzz.png',
     url: 'https://zmuda44.github.io/Rutgers-Professional-Portfolio/fizzbuzz.html'
   },
   {
@@ -26,10 +26,28 @@ const projects = [
     description: "Submitted for the module 4 challenge",
     img: './images/First blog post day mode screenshot (1).png',
     url: 'https://zmuda44.github.io/Module-4-Challenge-Create-Personal-Blog/'
+  },
+  {
+    id: 5,
+    title: "Employee Payroll Tracker",
+    description: "User can enter employee information and track their payroll",
+    img: './images/Module 3 Challenge Screenshot.png',
+    url: 'https://zmuda44.github.io/Module-3-Challenge-Employee-Payroll-Tracker/'
+  },
+  {
+    id: 6,
+    title: "CSS Portfolio",
+    description: "Origin Portfolio made in html and css",
+    img: './images/GB Portfolio screenshot.png',
+    url: 'https://zmuda44.github.io/Rutgers-Professional-Portfolio/'
   }
 ]
 
-// const projects = ["me", "you", "someone else"]
+
+
+
+
+
 
 
 export default projects;

@@ -1,4 +1,6 @@
-import Projects from '../components/projects'
+import Project from '../components/project'
+import projects from '../db/projects'
+console.log(projects)
 
 function Portfolio() {
   return (
@@ -20,7 +22,15 @@ function Portfolio() {
 
               
       <div className="bottom">
-              <Projects />
+        {projects.map(project => (
+          <Project
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            img={project.img}
+            url={project.url}
+          />
+        ))}
       </div>
     
     </section>
