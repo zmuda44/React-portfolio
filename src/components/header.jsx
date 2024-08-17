@@ -16,4 +16,4 @@ export default Header;
 
 
 
-// <h1 contentEditable="true">Greg Bailey Portfolio</h1>
+

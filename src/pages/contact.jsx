@@ -2,28 +2,24 @@
 import { useState } from 'react';
 
 
-// Helper functions to be used later
-// import { checkPassword, validateEmail } from '../../utils/helpers';
-
 function Contact() {
 
-  // Set all variables to 0 
+  // Set all variables to empty to start
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  // something is doing this anyway with email
+
 
   const handleInputChange = (e) => {
 
-    // const { target } = e;
+
     const target = e.target
     console.log(target)
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, name, and password
-       
+    // Based on the input type, we set the state of either email, name, and password       
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
@@ -114,20 +110,7 @@ function Contact() {
 
 export default Contact;
 
-// add functionality to put the error message as a p element below the form when an error triggers.  use &&
 
-// function Contact() {
-//   return (
-//     <main>
-//     <div className='container'>
-//         <p>This is the contact me section</p>
-//         <p>This is where content will go</p>
-//     </div>
-//     </main>
-//   );
-// }
-
-// export default Contact;
 
 
 

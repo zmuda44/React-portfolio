@@ -1,6 +1,6 @@
 import Project from '../components/project'
 import projects from '../db/projects'
-console.log(projects)
+
 
 function Portfolio() {
   return (
