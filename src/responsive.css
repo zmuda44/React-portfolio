@@ -1,9 +1,7 @@
 
 /* Cell phone size */
 @media screen and (max-width: 400px) {
-header {
-  background-color: red;
-}
+
 
 
 
@@ -32,6 +30,14 @@ header {
   #about-me .top .right button {
   min-height: 40px;
     }
+
+  #portfolio .project-description {
+    display: none;
+  }
+
+  footer .right  {
+    display: block;
+  }
 
 
 
