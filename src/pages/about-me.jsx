@@ -11,9 +11,9 @@ function AboutMe() {
             <img src="./images/shadowgreg.png" alt="image of me" />           
           </div>
           <div className="right">
-            <p>Future button FS</p>
-            <p>Future button RD</p>
-            <p>Future button GD</p>
+            <button>Full Stack</button>
+            <button>Future button RD</button>
+            <button>Future button GD</button>
           </div>   
         </div>
         <div className="bio">

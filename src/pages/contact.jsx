@@ -74,9 +74,10 @@ function Contact() {
     <section id='contact'>
 
       <div className="container">
-        <h1>Hello {name}</h1>
+        <h1 id="contact-title" className="section-title">Hello {name}</h1>
         <form className="form" onSubmit={handleFormSubmit}>
         <input
+            id="contactMe-name"
             value={name}
             name="name"
             onChange={handleInputChange}
@@ -85,6 +86,7 @@ function Contact() {
             placeholder="Name"
           />
           <input
+            id="contactMe-email"
             value={email}
             name="email"
             onChange={handleInputChange}
@@ -93,11 +95,12 @@ function Contact() {
             placeholder="email"
           />
           <input
+            id="contactMe-message"  
             value={message}
             name="message"
             onChange={handleInputChange}
             onBlur={handleOut}
-            type="password"
+            type="text"
             placeholder="Type your message here"
           />
           <button type="submit">Submit</button>
