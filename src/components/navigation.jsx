@@ -1,10 +1,21 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function Navigation() {
-  const [activeLink, setActiveLink] = useState(null); // Track the active link
+  const [activeLink, setActiveLink] = useState(); // Track the active link
+  
+  useEffect(() => {
+    // Highlight the "About Me" link on initial load
+    const aboutMeLink = document.getElementById('navLink1');
+    if (aboutMeLink) {
+      aboutMeLink.classList.add('nav-active');
+      setActiveLink(aboutMeLink);
+    }
+  }, []);
 
   function highlightLink(event) {
+
+    console.log(activeLink)
     // Remove the 'nav-active' class from the previously active link
     if (activeLink) {
       activeLink.classList.remove('nav-active');

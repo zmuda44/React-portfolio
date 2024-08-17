@@ -9,9 +9,9 @@ function Footer() {
           <p>email: gregbailey617@gmail.com</p>
         </div>
         <div className="right">
-          <p>github</p>
-          <p>linkedin</p>
-          <p>stack overflow</p>
+          <p><a href="https://github.com/zmuda44">github</a></p>
+          <p><a href="https://www.linkedin.com/in/greg-bailey-a2a13887/">linkedin</a></p>
+          <p><a href="https://stackexchange.com/users/30242602/greg">stack overflow</a></p>
         </div> 
       </div>       
     </footer>

@@ -5,21 +5,21 @@ function AboutMe() {
   return (
     <section id='about-me'>
       <div className="container">
-      <h1 id="aboutme-title">About Me</h1>
+      <h1 id="aboutme-title" className="section-title">About Me</h1>
         <div className='top'>
           <div className="left">
             <img src="./images/shadowgreg.png" alt="image of me" />           
           </div>
           <div className="right">
-            <p>full stack</p>
-            <p>responsive design</p>
-            <p>graphic design</p>
+            <p>Future button FS</p>
+            <p>Future button RD</p>
+            <p>Future button GD</p>
           </div>   
         </div>
         <div className="bio">
           <h3>Greg Bailey - Web Developer</h3>
           <p>The path that has brought me to web development started in Marketing. 
-          In a Markeing role, the manager is often tasked with monitoring the website's content and developing new content to meet marketing goals. 
+          In a Marketing role, the manager is often tasked with monitoring the website's content and developing new content to meet marketing goals. 
           I have worked with online platforms in this capacity for several years; in Wordpress, Umbraco and other systems.
           A marketing professional will eventually familiarize themselves with html structure and css. The website manager will often provide access to a portion of the CMS or a webpage to allow them to produce blog content, so my experience in websites began in this manner.
           </p>

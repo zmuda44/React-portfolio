@@ -1,9 +1,8 @@
 /* Universal */
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
-  background-color: red;
 }
 
 
@@ -12,6 +11,13 @@
 header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: rgb(126, 126, 126);
 }
 
 header ul {
@@ -28,72 +34,247 @@ header ul {
   color: white;
 }
 
-/* Main */
-
-section {
-  color: white;
-  margin: 40px;
-  background-color: gray;
-  border-radius: 20px;
-  padding: 20px;
+.hamburger-menu {
+  position: relative;
 }
 
-/* About Me Section */
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-#aboutme-title {
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+/* Main */
+
+main {
+  margin: auto;
+  width: 80%;
+
+  color: white;
+}
+
+.section-title {
   text-align: center;
   font-size: 3rem;
 }
 
-#about-me .top {
+/* About Me Section */
+#about-me {
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid white; */
 }
+
+#about-me .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me .top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 20px;
+} 
+
+#about-me .top::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: white;
+  top: 0;
+}
+#about-me .top::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+}
+
+
 
 #about-me .top .right {
   font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  margin-left: 20%;
+
+}
+
+#about-me .top .right p {
+color: yellow;
+padding: 1rem;
+border-radius: 20px;
+box-shadow: 3px 3px 25px 1px rgb(216, 106, 190);
 }
 
 #about-me img {
-  width: 400px;
+  width: 50%;
   border-radius: 50%;
+  border: rgb(126, 106, 190) solid 1px;
+  box-shadow: 1px 1px 25px 2px rgb(216, 106, 190);
+
 }
 
 /* Porfolio */
-#portfolio .top {
-  display: flex;
-  justify-content: space-between;
+
+#portfolio img {  width: 20%;
 }
 
-#portfolio .top #adv-header {
-  padding: 0;
-  margin: 0;
-}
-#portfolio .top #adv-header p {
-  padding: 0;
-  margin: 0;
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#portfolio .bottom {
+#portfolio .container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
+
+.section-body {
+  position: relative;
+display: flex;
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+padding: 50px;
+margin-bottom: 20px;
+}
+
+.section-body::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: white;
+  top: 0;
+}
+.section-body::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+}
+
 
 #portfolio .project {
+  background-color: gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 30%;
-  margin: 20px;
 }
 
-.project img {
-  width: 300px;
+#portfolio .project .img-container {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
 }
+
+#portfolio .project img {
+  width: 50%;
+
+  border-radius: 20px 20px 0 0;
+  margin: 15px;
+}
+
+
+
 
 
 /* Footer */
@@ -101,9 +282,12 @@ section {
 footer .container{
   color: white;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
+}
 
+footer a {
+  color: white;
 }
 
 footer .right {
